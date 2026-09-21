@@ -8,6 +8,7 @@ A dependency-light static personal website for professional presence, IEEE Senio
 - `styles.css` — responsive visual design
 - `styles-overrides.css` — Prolens-inspired layout layer
 - `styles-polish.css` — final composition and responsive refinements
+- `styles-final.css` — clean career timeline and project case-study layout
 - `script.js` — color-theme toggle behavior
 - `script.js` — light/dark theme toggle
 - `assets/headshot.png` — public profile image used on the homepage
