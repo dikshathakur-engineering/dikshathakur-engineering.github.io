@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b1020" />
-    <meta name="description" content="Diksha Thakur is a software engineer working across backend systems, AI, safety engineering, and distributed platforms." />
+    <meta name="theme-color" content="#f5f5f2" />
+    <meta name="description" content="Diksha Thakur is a software engineer working across backend systems, applied AI, safety engineering, and distributed platforms." />
     <meta property="og:title" content="Diksha Thakur — Backend systems, AI, and safety engineering" />
     <meta property="og:description" content="Software engineer building reliable systems for AI, safety, and large-scale platforms." />
     <meta property="og:type" content="website" />
@@ -13,73 +13,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-overrides.css" />
   </head>
   <body>
-    <div class="glow glow-one"></div>
-    <div class="glow glow-two"></div>
-    <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Diksha Thakur home"><span>DT</span><strong>Diksha Thakur</strong></a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="Diksha Thakur home">DT<span>.</span></a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#career">Career</a>
-        <a href="#focus">Focus</a>
-        <a href="#judging">Judging</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
+        <a href="#about">About <span>↓</span></a>
+        <a href="#work">Work <span>↓</span></a>
+        <a href="#career">Career <span>↓</span></a>
+        <a href="#judging">Judging <span>↓</span></a>
+        <a href="#contact">Contact <span>↓</span></a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">◐</button>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero wrap">
-        <div class="eyebrow"><span class="pulse"></span> Backend engineering · AI · safety systems</div>
-        <figure class="portrait"><img src="assets/headshot.png" alt="Portrait of Diksha Thakur" /><figcaption>Building with care<br />in the Bay Area</figcaption></figure>
-        <h1>Building systems<br /><em>people can trust.</em></h1>
-        <p class="hero-copy">I’m a software engineer working at the intersection of reliable backend infrastructure, applied AI, and online safety.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
-          <a class="button button-quiet" href="https://www.linkedin.com/in/dikshathakur3119/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+        <div class="hero-copy">
+          <span class="eyebrow">Software engineer · Bay Area</span>
+          <h1>Building systems<br /><em>people can trust.</em></h1>
+          <p>I work across reliable backend infrastructure, applied AI, and online safety—turning complicated requirements into systems that hold up in the real world.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↗</span></a><a class="button button-secondary" href="https://www.linkedin.com/in/dikshathakur3119/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div>
+          <div class="hero-meta"><span>Currently at Reddit</span><span class="rule"></span><span>Open to technical judging</span></div>
         </div>
-        <div class="hero-meta"><span>Based in the San Francisco Bay Area</span><span class="rule"></span><span>Open to technical judging &amp; collaboration</span></div>
+        <div class="hero-visual" aria-label="Diksha Thakur, software engineer"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img src="assets/headshot.png" alt="Portrait of Diksha Thakur" /><span class="role-pill pill-backend">Backend</span><span class="role-pill pill-ai">Applied AI</span><span class="role-pill pill-safety">Safety</span></div>
       </section>
 
-      <section class="signal-strip wrap" aria-label="Professional highlights">
-        <div><strong>10</strong><span>years in<br />software engineering</span></div>
-        <div><strong>5+</strong><span>production<br />platforms</span></div>
-        <div><strong>380</strong><span>technical<br />reviews</span></div>
-        <div><strong>120</strong><span>backend<br />pull requests</span></div>
-      </section>
+      <section class="stat-strip wrap" aria-label="Professional highlights"><div><strong>10</strong><span>years in<br />software engineering</span></div><div><strong>5</strong><span>engineering<br />organizations</span></div><div><strong>380</strong><span>technical<br />reviews</span></div><div><strong>120</strong><span>backend<br />pull requests</span></div></section>
 
-      <section id="about" class="section about-section wrap">
-        <div class="section-label">01 / About</div>
-        <div class="section-intro"><h2>Technical judgment<br /><em>with a human edge.</em></h2><p>I build backend systems for complicated, high-consequence environments. My work spans payments, data platforms, applied AI, and safety engineering—always with an eye toward the people who rely on the system when things get difficult.</p></div>
-        <div class="about-note"><span>Currently</span><strong>Software Engineer at Reddit</strong><p>Working on Safety Tools Platform systems that help communities stay safer while preserving reliable review, enforcement, appeals, and restoration workflows.</p></div>
-      </section>
+      <section id="about" class="section about-section"><div class="wrap two-column"><div><span class="section-kicker">01 / About me</span><h2>Technical judgment<br /><em>with a human edge.</em></h2><p class="large-copy">I build backend systems for complicated, high-consequence environments. My work spans payments, data platforms, applied AI, and safety engineering—with attention to the people who rely on the system when things get difficult.</p><div class="signature">Diksha Thakur</div></div><div class="accordion-list"><details open><summary><span>01</span> Backend engineer <b>−</b></summary><p>APIs, event-driven systems, service boundaries, and operational resilience for products used at scale.</p></details><details><summary><span>02</span> Safety engineer <b>＋</b></summary><p>Tools connecting policy, human review, enforcement, appeals, restoration, and legal response.</p></details><details><summary><span>03</span> AI &amp; reliability <b>＋</b></summary><p>Systems that are useful, measurable, explainable, and safe to operate.</p></details><details><summary><span>04</span> Data infrastructure <b>＋</b></summary><p>Platforms that help people find, understand, and act on information.</p></details></div></div></section>
 
-      <section id="work" class="section wrap">
-        <div class="section-label">02 / Selected work</div>
-        <div class="section-intro"><h2>Systems that make<br /><em>complex work safer.</em></h2><p>Across Reddit, Google, Lyft, Audible, and ZS Associates, I’ve built software where correctness, reliability, and operational judgment matter.</p></div>
-        <div class="work-grid">
-          <article class="work-card featured"><div class="card-top"><span class="card-index">01</span><span class="card-tag">Current · Reddit</span></div><h3>Safety tools platform</h3><p>Backend systems supporting content reporting, human review, enforcement, appeals, restoration, and legal response at scale.</p><div class="chips"><span>Backend lead</span><span>Trust &amp; safety</span><span>Production systems</span></div></article>
-          <article class="work-card"><div class="card-top"><span class="card-index">02</span><span class="card-tag">2021–2024 · Google</span></div><h3>Payments infrastructure</h3><p>Scalable orchestration and Java RPC APIs supporting B2B advertising payment workflows and recurring payments.</p><div class="chips"><span>Java</span><span>Distributed systems</span><span>Payments</span></div></article>
-          <article class="work-card"><div class="card-top"><span class="card-index">03</span><span class="card-tag">2020–2021 · Lyft</span></div><h3>Data platform experience</h3><p>Developer-facing tools that helped analysts and data scientists discover and work with data more effectively.</p><div class="chips"><span>Airflow</span><span>Python</span><span>Open source</span></div></article>
-        </div>
-      </section>
+      <section id="work" class="section work-section section-dark"><div class="wrap"><span class="section-kicker">02 / Selected work</span><h2 class="center-heading">Systems that make<br /><em>complex work safer.</em></h2><p class="center-copy">Selected engineering work across Reddit, Google, and Lyft. The descriptions stay intentionally high-level to respect employer confidentiality.</p><div class="work-grid"><article class="work-card"><span class="card-number">01</span><span class="card-company">Reddit · Current</span><h3>Safety tools platform</h3><p>Backend systems supporting content reporting, human review, enforcement, appeals, restoration, and legal response at scale.</p><div class="chips"><span>Backend</span><span>Trust &amp; safety</span></div></article><article class="work-card"><span class="card-number">02</span><span class="card-company">Google · 2021—2024</span><h3>Payments infrastructure</h3><p>Backend and service infrastructure supporting B2B advertising payment workflows and recurring payments.</p><div class="chips"><span>Java</span><span>Distributed systems</span></div></article><article class="work-card"><span class="card-number">03</span><span class="card-company">Lyft · 2020—2021</span><h3>Data platform experience</h3><p>Developer-facing tools that helped analysts and data scientists discover and work with data more effectively.</p><div class="chips"><span>Airflow</span><span>Open source</span></div></article></div></div></section>
 
-      <section id="focus" class="section section-dark">
-        <div class="wrap"><div class="section-label">03 / Technical focus</div><div class="focus-layout"><h2>Curious about<br /><em>the hard parts.</em></h2><div class="focus-list"><div><span>01</span><strong>Backend architecture</strong><p>APIs, event-driven systems, service boundaries, and operational resilience.</p></div><div><span>02</span><strong>Applied AI &amp; reliability</strong><p>Systems that are useful, measurable, explainable, and safe to operate.</p></div><div><span>03</span><strong>Safety engineering</strong><p>Tools that connect policy, human review, enforcement, appeals, and restoration.</p></div><div><span>04</span><strong>Data infrastructure</strong><p>Platforms that help people find, understand, and act on information.</p></div></div></div></div>
-      </section>
+      <section id="career" class="section career-section"><div class="wrap"><span class="section-kicker">03 / Career</span><h2 class="center-heading">A decade of<br /><em>learning by shipping.</em></h2><p class="center-copy">A path through product engineering, data platforms, payments, and safety systems.</p><div class="timeline"><div class="timeline-item"><span>2024—now</span><div><strong>Reddit</strong><p>Software Engineer · Safety Tools Platform</p></div></div><div class="timeline-item"><span>2021—2024</span><div><strong>Google</strong><p>Software Engineer · Payments Platform</p></div></div><div class="timeline-item"><span>2020—2021</span><div><strong>Lyft</strong><p>Software Engineer · Data Platform</p></div></div><div class="timeline-item"><span>2016—2019</span><div><strong>ZS Associates</strong><p>Business Technology Analyst · Master Data Management</p></div></div></div></div></section>
 
-      <section id="judging" class="section wrap">
-        <div class="section-label">03 / Technical judging</div>
-        <div class="judge-panel"><div><h2>Good ideas deserve<br /><em>good questions.</em></h2><p>I’m available to judge online hackathons and technical competitions in backend engineering, AI systems, distributed systems, data infrastructure, developer tools, reliability, and trust &amp; safety.</p><a class="text-link" href="mailto:dikshathakur3119@gmail.com?subject=Hackathon%20judging%20invitation">Invite me to judge <span>↗</span></a></div><div class="judge-rubric"><div><span>01</span>Technical depth</div><div><span>02</span>Architecture &amp; reliability</div><div><span>03</span>Real-world usefulness</div><div><span>04</span>Responsible AI</div></div></div>
-      </section>
+      <section id="judging" class="section judging-section"><div class="wrap judging-grid"><div><span class="section-kicker">04 / Technical judging</span><h2>Good ideas deserve<br /><em>good questions.</em></h2><p class="large-copy">I’m available to judge online hackathons and technical competitions in backend engineering, AI systems, distributed systems, data infrastructure, developer tools, reliability, and trust &amp; safety.</p><a class="button button-primary" href="mailto:dikshathakur3119@gmail.com?subject=Hackathon%20judging%20invitation">Invite me to judge <span>↗</span></a></div><div class="rubric"><div><span>01</span><strong>Technical depth</strong></div><div><span>02</span><strong>Architecture &amp; reliability</strong></div><div><span>03</span><strong>Real-world usefulness</strong></div><div><span>04</span><strong>Responsible AI</strong></div></div></div></section>
 
-      <section id="career" class="section timeline-section wrap"><div class="section-label">04 / Career</div><div class="timeline"><div><span>2024—now</span><strong>Reddit</strong><p>Software Engineer · Safety Tools Platform</p></div><div><span>2021—2024</span><strong>Google</strong><p>Software Engineer · Payments Platform</p></div><div><span>2020—2021</span><strong>Lyft</strong><p>Software Engineer · Data Platform</p></div><div><span>2016—2019</span><strong>ZS Associates</strong><p>Business Technology Analyst · Master Data Management</p></div></div></section>
-
-      <section id="education" class="section education-section wrap"><div class="section-label">05 / Education</div><div class="education-grid"><div><span>2018—2019</span><strong>Master of Science<br />Computer Science</strong><p>Arizona State University</p></div><div><span>Completed May 2016</span><strong>Bachelor’s degree<br />in engineering</strong><p>Foundation for a decade of professional software engineering.</p></div><div><span>Teaching</span><strong>Graduate Student Assistant</strong><p>Grader for object-oriented programming and tutor for Python and Java.</p></div></div></section>
-
-      <section id="contact" class="contact-section"><div class="wrap contact-inner"><div class="section-label">06 / Say hello</div><h2>Let’s build something<br /><em>worth shipping.</em></h2><p>For technical judging, speaking, collaboration, or thoughtful conversations about backend and AI systems.</p><a class="button button-primary" href="mailto:dikshathakur3119@gmail.com?subject=Hello%20Diksha">Get in touch <span>↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/dikshathakur3119/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/dikshathakur-engineering" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:dikshathakur3119@gmail.com">Email ↗</a></div></div></section>
+      <section id="contact" class="contact-section"><div class="wrap contact-grid"><div><span class="section-kicker">05 / Say hello</span><h2>Let’s build something<br /><em>worth shipping.</em></h2><div class="contact-portrait"><img src="assets/headshot.png" alt="Diksha Thakur" /></div><span class="contact-name">Diksha Thakur</span><div class="contact-tags"><span>Backend</span><span>Applied AI</span><span>Safety engineering</span></div></div><div class="contact-right"><a class="email-link" href="mailto:dikshathakur3119@gmail.com">dikshathakur3119@gmail.com</a><p>For technical judging, speaking, collaboration, or thoughtful conversations about backend and AI systems.</p><a class="button button-light" href="mailto:dikshathakur3119@gmail.com?subject=Hello%20Diksha">Send a message <span>↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/dikshathakur3119/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/dikshathakur-engineering" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></div></section>
     </main>
     <footer class="footer wrap"><span>© 2026 Diksha Thakur</span><span>Built with care in the Bay Area</span></footer>
     <script src="script.js"></script>

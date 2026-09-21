@@ -6,6 +6,8 @@ A dependency-light static personal website for professional presence, IEEE Senio
 
 - `index.html` — page content and structure
 - `styles.css` — responsive visual design
+- `styles-overrides.css` — Prolens-inspired layout layer
+- `script.js` — color-theme toggle behavior
 - `script.js` — light/dark theme toggle
 - `assets/headshot.png` — public profile image used on the homepage
 
